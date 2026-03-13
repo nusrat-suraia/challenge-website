@@ -321,18 +321,25 @@
 <!-- Games Tab -->
 <div class="tab-panel" id="games">
     <div class="games-panel">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Choose a Game</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div class="game-card">
-                <h3>🖼️ 看图猜诗句</h3>
-                <p>根据图画选择正确的诗句</p>
-                <a href="games/game1.html" target="_blank" class="play-game-btn">Play Game 1</a>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">选择游戏 · Choose a Game</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+            
+            <!-- Game 1: 看图猜诗句 -->
+            <div class="game-card" style="text-align: center; padding: 2rem;">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🖼️</div>
+                <h3 style="margin-bottom: 1rem;">看图猜诗句</h3>
+                <p style="margin-bottom: 1.5rem;">根据图画选择正确的诗句</p>
+                <a href="games/静夜思小游戏.HTML" target="_blank" class="play-game-btn" style="display: inline-block; padding: 1rem 2rem; background: var(--gradient); color: white; border-radius: 40px; text-decoration: none; font-weight: 600;">Play Game 1</a>
             </div>
-            <div class="game-card">
-                <h3>🔗 诗词接龙</h3>
-                <p>选择下一句正确的诗</p>
-                <a href="games/game2.html" target="_blank" class="play-game-btn">Play Game 2</a>
+            
+            <!-- Game 2: 诗词接龙 -->
+            <div class="game-card" style="text-align: center; padding: 2rem;">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🔗</div>
+                <h3 style="margin-bottom: 1rem;">诗词接龙</h3>
+                <p style="margin-bottom: 1.5rem;">选择下一句正确的诗</p>
+                <a href="games/静夜思.HTML" target="_blank" class="play-game-btn" style="display: inline-block; padding: 1rem 2rem; background: var(--gradient); color: white; border-radius: 40px; text-decoration: none; font-weight: 600;">Play Game 2</a>
             </div>
+            
         </div>
     </div>
 </div>
