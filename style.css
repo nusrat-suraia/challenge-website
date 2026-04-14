@@ -1762,3 +1762,141 @@ footer {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+/* ===== SALE SECTION ===== */
+.sale-section {
+    padding: 8rem 2rem;
+    background: var(--bg-secondary);
+}
+
+.sale-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sale-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.sale-card {
+    background: var(--card-bg);
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.sale-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.sale-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.sale-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sale-card:hover .sale-image img {
+    transform: scale(1.05);
+}
+
+.sale-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gradient);
+    color: white;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    font-size: 1rem;
+    box-shadow: var(--shadow-sm);
+    z-index: 2;
+}
+
+.sale-content {
+    padding: 1.8rem;
+}
+
+.sale-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+.sale-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.sale-price {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.original-price {
+    color: var(--gray-light);
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.discount-price {
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.sale-button {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.sale-button:hover {
+    background: var(--gradient);
+    border-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Responsive: Sale Grid */
+@media (max-width: 992px) {
+    .sale-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .sale-section {
+        padding: 4rem 1rem;
+    }
+    .sale-grid {
+        grid-template-columns: 1fr;
+    }
+    .sale-content h3 {
+        font-size: 1.4rem;
+    }
+    .discount-price {
+        font-size: 1.5rem;
+    }
+}

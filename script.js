@@ -251,3 +251,9 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+// Sale buttons demo
+document.querySelectorAll('.sale-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        alert('Thank you for your interest! More products coming soon.');
+    });
+});
