@@ -1762,6 +1762,7 @@ footer {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+
 /* ===== SALE SECTION ===== */
 .sale-section {
     padding: 8rem 2rem;
@@ -1840,25 +1841,6 @@ footer {
     line-height: 1.4;
 }
 
-.sale-price {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.original-price {
-    color: var(--gray-light);
-    text-decoration: line-through;
-    font-size: 1rem;
-}
-
-.discount-price {
-    color: var(--primary);
-    font-size: 1.8rem;
-    font-weight: 800;
-}
-
 .sale-button {
     background: transparent;
     border: 2px solid var(--border-color);
@@ -1895,8 +1877,5 @@ footer {
     }
     .sale-content h3 {
         font-size: 1.4rem;
-    }
-    .discount-price {
-        font-size: 1.5rem;
     }
 }
